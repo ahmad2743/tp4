@@ -10,7 +10,9 @@ import java.util.List;
 
 /**
  * Hello world!
- *
+ * Essayer de deplayer le code dans la fonction dans le service
+ * creer une class Factory pour instancier un game en fonctionnement de la valeur de l'operateur
+ *Creer une interface pour encapsuler les SysOut et autres
  */
 public class App 
 {
