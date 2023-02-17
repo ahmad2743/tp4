@@ -24,12 +24,10 @@ public class GameService {
             throw new IllegalArgumentException("we need 2 or 3 arguments !");
         }
         else if (this.argumentsList.size() == 2){
-            Parser inputParser = new InputParser();
-            List<Integer> myListOfNumber = inputParser.readNumber(this.argumentsList.get(0));
-            String operator = inputParser.readOperator(this.argumentsList.get(1));
+            List<Integer> myListOfNumber = this.inputParser.readNumber(this.argumentsList.get(0));
+            String operator = this.inputParser.readOperator(this.argumentsList.get(1));
             if (operator.equals("+")){
-                Game additionGame = new AdditionGame(myListOfNumber, operator);
-                System.out.println(additionGame.run());
+                System.out.println(game.run());
             }
             if(operator.equals("-")){
                 throw new NotImplementedException();
